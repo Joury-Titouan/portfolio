@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Titouan Joury</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div id="Page">
+        <div id="Background">
+            <video class="background_video" autoplay loop>
+                <source src="./media/lueur.mp4">
+            </video>
+        </div>
+        <header class="siteHeader" id="SiteHeader">
+            <h1 class="siteHeader_title">Titouan Joury</h1>
+            <p class="siteHeader_label">Designer</p>
+            <nav class="siteHeader_nav" x-data>
+                <ol>
+                    <li>
+                        <div class="_dot"></div><a class="_text" href="index.html">&#9679; Accueil</a>
+                    </li>
+                    <li>
+                        <div class="_dot"></div><a class="_text" href="projects.html">&#9679; Projets</a>
+                    </li>
+                    <li>
+                        <div class="_dot"></div><a class="_text" href="contact.html">&#9679; Contact</a>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+        <main class="content">
+            <div class="content_inner">
+                <section class="page" class="home_container">
+                    <div class="page_content home">
+                        <p class="home_aboutme">
+                            <span> Je m'appelle Titouan Joury, j'ai 22 ans et</span>
+                            <span> je suis actuellement en deuxième année du</span>
+                            <span> BUT Métiers du Multimédia et de l'Internet (MMI).</span>
+                            <span> Le design et la musique sont deux passions </span>
+                            <span> qui me tiennent à cœur et qui me permettent </span>
+                            <span> de m'exprimer de manière créative.</span>
+                            <span> <br> </span>
+                            <span> Lors de ma deuxième année d'études,</span>
+                            <span> j'ai eu la chance de participer à un</span>
+                            <span> programme d'échange scolaire à Montréal. </span>
+                            <span> Cette expérience m'a permis de développer </span>
+                            <span> mes compétences et d'adopter une méthode </span>
+                            <span> de travail efficace. De plus, elle m'a </span>
+                            <span> permis de découvrir une culture différente </span>
+                            <span> ainsi qu'une approche de la vie active</span>
+                            <span> unique au Canada, ce qui m'a permis de </span>
+                            <span> mieux me connaître moi-même. </span>
+                        </p>
+                    </div>
+
+                    <div class="page_content info">
+                        <div class="info_item info_item-1">
+                            <div class="info_content">
+                                <ul>
+                                    <li><a class="text-btn" href="https://www.instagram.com/titouan.j_/" target="_blank"
+                                            rel="noopener">Instagram ↗</a></li>
+                                    <li><a class="text-btn" href="https://www.linkedin.com/in/titouan-joury/" target="_blank"
+                                            rel="noopener">LinkedIn ↗</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info_item info_item-2">
+                            <div class="info_content">
+                                <ul>
+                                    <li>
+                                        <div id="clipboard">
+                                            <input type="text" value="titouan.joury@gmail.com" id="myInput" readonly="readonly">
+                                            <button id="btn-copy" onclick="myFunction()"> <img src="media/copy-icon.svg"
+                                                    alt="bouton copier"></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="info_item info_item-3">
+                            <div class="info_content">
+                                <ul>
+                                    <li><span class="is-light">BUT Métiers du Multimédia et de l'Internet<br></span>
+                                        <span>Promo 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function myFunction() {
+                // Get the text field
+                var copyText = document.getElementById("myInput");
+
+                // Select the text field
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(copyText.value);
+
+                // Alert the copied text
+                alert("Copié dans le presse-papiers !");
+            } 
+    </script>
+</body>
+
+</html>
